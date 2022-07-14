@@ -69,6 +69,30 @@ const Home = () => {
             keyExtractor={(item) => item.id + 10}
             showsVerticalScrollIndicator={false}
           />
+
+          <Text style={styles.title}>July</Text>
+          <FlatList
+            data={data}
+            renderItem={({ item }) => <Card data={item} />}
+            keyExtractor={(item) => item.id + 10}
+            showsVerticalScrollIndicator={false}
+          />
+
+          <Text style={styles.title}>August</Text>
+          <FlatList
+            data={data}
+            renderItem={({ item }) => <Card data={item} />}
+            keyExtractor={(item) => item.id + 10}
+            showsVerticalScrollIndicator={false}
+          />
+
+          <Text style={styles.title}>September</Text>
+          <FlatList
+            data={data}
+            renderItem={({ item }) => <Card data={item} />}
+            keyExtractor={(item) => item.id + 10}
+            showsVerticalScrollIndicator={false}
+          />
         </ScrollView>
 
         <View
